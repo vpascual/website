@@ -4,12 +4,326 @@
   </title>
   <link rel="stylesheet" href="bower_components/lumx/dist/lumx.css">
   <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">
+  <link rel="stylesheet" href="test.css">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 </head>
 <body>
-  <i class="icon icon--l icon--blue icon--circled mdi mdi-twitter"></i>
-  <i class="icon icon--l icon--blue icon--circled mdi mdi-linkedin"></i>
-  <div flex-container="row">
+    <header class="header align-right">
+        <div class="toolbar-right">
+      <i class="icon icon--l icon--blue icon--circled mdi mdi-twitter"></i>
+      <i class="icon icon--l icon--blue icon--circled mdi mdi-linkedin"></i>
+      </div>
+  </header>
+  <div class="card">
+    <div class="toolbar">
+            <div class="toolbar__left mr+++">
+                <button class="btn btn--l btn--black btn--icon" lx-ripple>
+                    <i class="mdi mdi-menu"></i>
+                </button>
+            </div>
+
+            <span class="toolbar__label fs-title">Lorem Ipsum</span>
+
+            <div class="toolbar__right">
+                <lx-search-filter closed theme="light"></lx-search-filter>
+
+                <lx-dropdown position="right" from-top>
+                    <button class="btn btn--l btn--black btn--icon" lx-ripple lx-dropdown-toggle>
+                        <i class="mdi mdi-dots-vertical"></i>
+                    </button>
+
+                    <lx-dropdown-menu>
+                        <ul>
+                            <li><a class="dropdown-link">Action</a></li>
+                            <li><a class="dropdown-link">Another action</a></li>
+                            <li><a class="dropdown-link">Something else here</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-link dropdown-link--is-header">Header</a></li>
+                            <li><a class="dropdown-link">Separated link</a></li>
+                        </ul>
+                    </lx-dropdown-menu>
+                </lx-dropdown>
+            </div>
+        </div>
+    </div>
+
+  <div flex-container="row" flex-gutter="24">
+    <div flex-item>
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="imgs/football_twitter_map.png">
+                <span class="fs-headline tc-white-1 display-block">Lorem Ipsum</span>
+            </div>
+
+            <div class="p+">
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Share</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div class="p+">
+                <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1 mt+">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Yes</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div flex-container="row">
+                <div class="card__img card__img--left" style="height: 160px">
+                    <img src="/images/placeholder/3-vertical.jpg">
+                </div>
+
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                            <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                    <div class="card__actions">
+                        <button class="btn btn--m btn--black btn--flat" lx-ripple>Free sample</button>
+                        <button class="btn btn--m btn--orange btn--flat" lx-ripple>Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div flex-container="row" flex-gutter="24">
+    <div flex-item>
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="imgs/football_twitter_map.png">
+                <span class="fs-headline tc-white-1 display-block">Lorem Ipsum</span>
+            </div>
+
+            <div class="p+">
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Share</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div class="p+">
+                <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1 mt+">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Yes</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div flex-container="row">
+                <div class="card__img card__img--left" style="height: 160px">
+                    <img src="/images/placeholder/3-vertical.jpg">
+                </div>
+
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                            <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                    <div class="card__actions">
+                        <button class="btn btn--m btn--black btn--flat" lx-ripple>Free sample</button>
+                        <button class="btn btn--m btn--orange btn--flat" lx-ripple>Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div flex-container="row" flex-gutter="24">
+    <div flex-item>
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="imgs/football_twitter_map.png">
+                <span class="fs-headline tc-white-1 display-block">Lorem Ipsum</span>
+            </div>
+
+            <div class="p+">
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Share</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div class="p+">
+                <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1 mt+">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Yes</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div flex-container="row">
+                <div class="card__img card__img--left" style="height: 160px">
+                    <img src="/images/placeholder/3-vertical.jpg">
+                </div>
+
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                            <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                    <div class="card__actions">
+                        <button class="btn btn--m btn--black btn--flat" lx-ripple>Free sample</button>
+                        <button class="btn btn--m btn--orange btn--flat" lx-ripple>Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div flex-container="row" flex-gutter="24">
+    <div flex-item>
+        <div class="card">
+            <div class="card__img card__img--top">
+                <img src="imgs/football_twitter_map.png">
+                <span class="fs-headline tc-white-1 display-block">Lorem Ipsum</span>
+            </div>
+
+            <div class="p+">
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Share</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>Learn more</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div class="p+">
+                <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+
+                <div class="paragraph fs-body-1 mt+">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique orci a lacinia malesuada.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card__actions">
+                <button class="btn btn--m btn--black btn--flat" lx-ripple>Yes</button>
+                <button class="btn btn--m btn--orange btn--flat" lx-ripple>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div flex-item>
+        <div class="card">
+            <div flex-container="row">
+                <div class="card__img card__img--left" style="height: 160px">
+                    <img src="/images/placeholder/3-vertical.jpg">
+                </div>
+
+                <div flex-item flex-container="column">
+                    <div flex-item>
+                        <div class="p+">
+                            <strong class="fs-headline display-block">Lorem Ipsum</strong>
+                            <span class="fs-subhead tc-black-2 display-block">Lorem Ipsum</span>
+                        </div>
+                    </div>
+
+                    <div class="card__actions">
+                        <button class="btn btn--m btn--black btn--flat" lx-ripple>Free sample</button>
+                        <button class="btn btn--m btn--orange btn--flat" lx-ripple>Review</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div flex-container="row" flex-gutter="24">
     <div flex-item>
         <div class="card">
             <div class="card__img card__img--top">
